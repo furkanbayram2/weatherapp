@@ -1,32 +1,26 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+	<div id="app">
+		<div class="container">
+			<div class="row">
+				<router-view/>
+			</div>
+		</div>
+	</div>
 </template>
 
+
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import url('https://fonts.googleapis.com/css?family=Raleway:300&display=swap');
+html {
+	height: 100%;
 }
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+body {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300 !important;
+	color: #ffffff !important;
+	min-height: 100%;
+	background-image: linear-gradient(238deg, rgb(70, 61, 115), rgb(91, 0, 106) 50%, rgb(197, 51, 210), rgb(86, 25, 122));
+	background-repeat: no-repeat;
 }
 </style>
