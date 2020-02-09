@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home container">
     <Header/>
     <Search/>
     <Result/>
@@ -14,7 +14,6 @@
 import Header from '@/components/Header.vue'
 import Search from '@/components/Search.vue'
 import Result from '@/components/Result.vue'
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'home',
@@ -22,7 +21,6 @@ export default {
     Header,
     Search,
     Result,
-    HelloWorld
   }
 }
 </script>
